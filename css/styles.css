@@ -59,6 +59,14 @@ img {
   padding: 94px 0;
 }
 
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 /* ХЕДЕР */
 
 .header {
@@ -123,16 +131,13 @@ img {
 }
 
 .icon-contact {
-  fill: var(--second-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-contact,
-.link:hover {
-  fill: currentColor;
-}
-
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--second-color);
   text-decoration-line: none;
   font-weight: 500;
@@ -142,12 +147,8 @@ img {
 /*  Слонаг Компанії  */
 
 .hero {
-  background: #2f303a;
   padding: 0;
   text-align: center;
-}
-
-.overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -223,14 +224,14 @@ img {
   margin-right: 30px;
 }
 
-.icon-feature {
+.icon-container {
   display: flex;
-  width: 100%;
-  height: 120px;
-  padding: 25px 100px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  justify-content: center;
   align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -270,13 +271,6 @@ img {
 /*  Команда  */
 .team {
   background-color: #f5f4fa;
-}
-
-.team-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .team-items {
@@ -346,20 +340,13 @@ img {
   fill: currentColor;
 }
 
-.soc-link:hover {
+.soc-link:hover,
+:focus {
   color: var(--third-color);
   background-color: var(--accent-color);
 }
 
 /* ПОСТІЙНІ КЛІЄНТИ */
-
-.customers-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
-}
 
 .customers-list {
   display: flex;
@@ -376,8 +363,6 @@ img {
   margin-right: 30px;
 }
 
-
-
 .customers-link {
   width: 100%;
   height: 100%;
@@ -390,11 +375,13 @@ img {
   border-radius: 4px;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+:focus {
   border-color: var(--accent-color);
 }
 
-.customers-icon:hover {
+.customers-icon:hover,
+:focus {
   fill: var(--accent-color);
 }
 
@@ -402,11 +389,12 @@ img {
 
 .joint {
   display: flex;
+  align-items: baseline;
 }
 
 .footer {
   background: #2f303a;
-  padding: 60px 15px;
+  padding: 60px;
 }
 
 .footer-logo {
@@ -421,7 +409,7 @@ img {
 }
 
 .container-address {
-  display: inline-block;
+  min-width: 231px;
 }
 
 .address-items {
@@ -550,19 +538,18 @@ img {
 .portfolio-item {
   width: 370px;
   background: var(--third-color);
-
 }
 
 .portfolio-link {
   display: block;
   width: 100%;
   height: 100%;
-
 }
 
 .portfolio-link:hover {
   background: var(--third-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
