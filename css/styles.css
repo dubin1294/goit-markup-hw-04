@@ -380,12 +380,10 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--accent-color);
-}
-
-.customers-icon:hover,
-:focus {
   fill: var(--accent-color);
 }
+
+
 
 /*  ФУТЕР  */
 
@@ -476,6 +474,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .social-icon {
@@ -483,9 +482,9 @@ img {
 }
 
 .social-link:hover,
-.soc-link:focus {
+.social-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
+ 
 }
 
 
@@ -506,19 +505,19 @@ img {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  background: var(--accent-color);
-  border-radius: 4px;
+  background-color: var(--accent-color);
+  
   color: var(--third-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
+    0px 2px 2px rgba(0, 0, 0, 0.12);}
+ 
 
 .button-items {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .button-items :not(:last-child) {
@@ -545,10 +544,9 @@ img {
 }
 
 .portfolio-link:hover {
-  background: var(--third-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  
 }
 
 .portfolio-title {
