@@ -120,6 +120,8 @@ img {
   color: var(--primary-color);
 }
 
+
+
 .contact-items {
   display: flex;
   padding: 32px 0;
@@ -341,7 +343,7 @@ img {
 }
 
 .soc-link:hover,
-:focus {
+.soc-link:focus {
   color: var(--third-color);
   background-color: var(--accent-color);
 }
@@ -376,7 +378,7 @@ img {
 }
 
 .customers-link:hover,
-:focus {
+.customers-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -480,9 +482,13 @@ img {
   fill: var(--third-color);
 }
 
-.social-item:hover {
+.social-link:hover,
+.soc-link:focus {
   background-color: var(--accent-color);
+  border-radius: 50%;
 }
+
+
 
 /*  ПОРТФОЛІО  */
 
@@ -498,21 +504,14 @@ img {
   padding: 6px 22px;
 }
 
-.button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
   background: var(--accent-color);
   border-radius: 4px;
   color: var(--third-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-}
-
-.button-portfolio:focus {
-  background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--third-color);
 }
 
 .button-items {
@@ -542,8 +541,7 @@ img {
 
 .portfolio-link {
   display: block;
-  width: 100%;
-  height: 100%;
+
 }
 
 .portfolio-link:hover {
